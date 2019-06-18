@@ -1,4 +1,6 @@
 const request = require('request')
+const config = require('../data/config.js')
+const DARKSKY_KEY = process.env.DARKSKY_KEY || config.DARKSKY_KEY
 
 const forecast = (latitude, longitude, callback) => {
   const url = `https://api.darksky.net/forecast/${DARKSKY_KEY}/${latitude},${longitude}?units=us`
