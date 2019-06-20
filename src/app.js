@@ -41,7 +41,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
   res.render('help', {
     title: 'Help',
-    helpMessage: 'Helpful text',
+    helpMessage: 'This is an app that fetches API data to show you the weather.\n\nThis is a practice for using Node.js this app may not be up to date.',
     name: 'Ross Jones'
   })
 })
